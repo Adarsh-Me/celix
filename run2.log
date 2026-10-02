@@ -1,0 +1,242 @@
+scan	Set up job	﻿2026-10-02T15:12:32.1869624Z Current runner version: '2.337.0'
+scan	Set up job	2026-10-02T15:12:32.1907312Z ##[group]Runner Image Provisioner
+scan	Set up job	2026-10-02T15:12:32.1908872Z Hosted Compute Agent
+scan	Set up job	2026-10-02T15:12:32.1910142Z Version: 20260901.588
+scan	Set up job	2026-10-02T15:12:32.1911400Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+scan	Set up job	2026-10-02T15:12:32.1912760Z Build Date: 2026-09-01T19:56:44Z
+scan	Set up job	2026-10-02T15:12:32.1914552Z Worker ID: {efa62f0e-1b4a-45bb-894a-87ac173425b4}
+scan	Set up job	2026-10-02T15:12:32.1915450Z Azure Region: centralus
+scan	Set up job	2026-10-02T15:12:32.1916093Z ##[endgroup]
+scan	Set up job	2026-10-02T15:12:32.1917856Z ##[group]Operating System
+scan	Set up job	2026-10-02T15:12:32.1918555Z Ubuntu
+scan	Set up job	2026-10-02T15:12:32.1919287Z 22.04.5
+scan	Set up job	2026-10-02T15:12:32.1919842Z LTS
+scan	Set up job	2026-10-02T15:12:32.1920398Z ##[endgroup]
+scan	Set up job	2026-10-02T15:12:32.1921096Z ##[group]Runner Image
+scan	Set up job	2026-10-02T15:12:32.1921763Z Image: ubuntu-22.04
+scan	Set up job	2026-10-02T15:12:32.1922437Z Version: 20260927.309.1
+scan	Set up job	2026-10-02T15:12:32.1923562Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260927.309/images/ubuntu/Ubuntu2204-Readme.md
+scan	Set up job	2026-10-02T15:12:32.1925973Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260927.309
+scan	Set up job	2026-10-02T15:12:32.1927027Z ##[endgroup]
+scan	Set up job	2026-10-02T15:12:32.1928264Z ##[group]GITHUB_TOKEN Permissions
+scan	Set up job	2026-10-02T15:12:32.1930192Z Contents: read
+scan	Set up job	2026-10-02T15:12:32.1930948Z Metadata: read
+scan	Set up job	2026-10-02T15:12:32.1931595Z ##[endgroup]
+scan	Set up job	2026-10-02T15:12:32.1933719Z Secret source: Actions
+scan	Set up job	2026-10-02T15:12:32.1935227Z Cache mode: write
+scan	Set up job	2026-10-02T15:12:32.1935975Z Prepare workflow directory
+scan	Set up job	2026-10-02T15:12:32.2445361Z Prepare all required actions
+scan	Set up job	2026-10-02T15:12:32.2517258Z Getting action download info
+scan	Set up job	2026-10-02T15:12:32.5928833Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+scan	Set up job	2026-10-02T15:12:32.7074890Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+scan	Set up job	2026-10-02T15:12:32.8881458Z Complete job name: scan
+scan	Checkout source code	﻿2026-10-02T15:12:32.9682683Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+scan	Checkout source code	2026-10-02T15:12:32.9683800Z with:
+scan	Checkout source code	2026-10-02T15:12:32.9684671Z   repository: Adarsh-Me/celix
+scan	Checkout source code	2026-10-02T15:12:32.9688416Z   token: ***
+scan	Checkout source code	2026-10-02T15:12:32.9688856Z   ssh-strict: true
+scan	Checkout source code	2026-10-02T15:12:32.9689458Z   ssh-user: git
+scan	Checkout source code	2026-10-02T15:12:32.9689925Z   persist-credentials: true
+scan	Checkout source code	2026-10-02T15:12:32.9690428Z   clean: true
+scan	Checkout source code	2026-10-02T15:12:32.9690890Z   sparse-checkout-cone-mode: true
+scan	Checkout source code	2026-10-02T15:12:32.9691419Z   fetch-depth: 1
+scan	Checkout source code	2026-10-02T15:12:32.9691863Z   fetch-tags: false
+scan	Checkout source code	2026-10-02T15:12:32.9692316Z   show-progress: true
+scan	Checkout source code	2026-10-02T15:12:32.9692769Z   lfs: false
+scan	Checkout source code	2026-10-02T15:12:32.9693189Z   submodules: false
+scan	Checkout source code	2026-10-02T15:12:32.9693639Z   set-safe-directory: true
+scan	Checkout source code	2026-10-02T15:12:32.9694430Z   allow-unsafe-pr-checkout: false
+scan	Checkout source code	2026-10-02T15:12:32.9695285Z env:
+scan	Checkout source code	2026-10-02T15:12:32.9695726Z   TRIVY_VERSION: 0.75.0
+scan	Checkout source code	2026-10-02T15:12:32.9696444Z   TRIVY_SHA256: c6e65abddb348e25f10549df887045629cf28cc72453cd1c63acb717316b3f3f
+scan	Checkout source code	2026-10-02T15:12:32.9697292Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:33.0785776Z Syncing repository: Adarsh-Me/celix
+scan	Checkout source code	2026-10-02T15:12:33.0788360Z ##[group]Getting Git version info
+scan	Checkout source code	2026-10-02T15:12:33.0789201Z Working directory is '/home/runner/work/celix/celix'
+scan	Checkout source code	2026-10-02T15:12:33.0790197Z [command]/usr/bin/git version
+scan	Checkout source code	2026-10-02T15:12:33.0883543Z git version 2.55.0
+scan	Checkout source code	2026-10-02T15:12:33.0915370Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:33.0931546Z Temporarily overriding HOME='/home/runner/work/_temp/ed140e18-6b9b-43b1-99f5-af1e44e93bc3' before making global git config changes
+scan	Checkout source code	2026-10-02T15:12:33.0934527Z Adding repository directory to the temporary git global config as a safe directory
+scan	Checkout source code	2026-10-02T15:12:33.0937184Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/celix/celix
+scan	Checkout source code	2026-10-02T15:12:33.0976807Z Deleting the contents of '/home/runner/work/celix/celix'
+scan	Checkout source code	2026-10-02T15:12:33.0981195Z ##[group]Determining repository object format
+scan	Checkout source code	2026-10-02T15:12:33.0982922Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:33.0984852Z ##[group]Initializing the repository
+scan	Checkout source code	2026-10-02T15:12:33.0987557Z [command]/usr/bin/git init /home/runner/work/celix/celix
+scan	Checkout source code	2026-10-02T15:12:33.1133426Z hint: Using 'master' as the name for the initial branch. This default branch name
+scan	Checkout source code	2026-10-02T15:12:33.1135951Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+scan	Checkout source code	2026-10-02T15:12:33.1137627Z hint: to use in all of your new repositories, which will suppress this warning,
+scan	Checkout source code	2026-10-02T15:12:33.1139114Z hint: call:
+scan	Checkout source code	2026-10-02T15:12:33.1139927Z hint:
+scan	Checkout source code	2026-10-02T15:12:33.1140908Z hint: 	git config --global init.defaultBranch <name>
+scan	Checkout source code	2026-10-02T15:12:33.1142142Z hint:
+scan	Checkout source code	2026-10-02T15:12:33.1143353Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+scan	Checkout source code	2026-10-02T15:12:33.1145353Z hint: 'development'. The just-created branch can be renamed via this command:
+scan	Checkout source code	2026-10-02T15:12:33.1146744Z hint:
+scan	Checkout source code	2026-10-02T15:12:33.1147604Z hint: 	git branch -m <name>
+scan	Checkout source code	2026-10-02T15:12:33.1148641Z hint:
+scan	Checkout source code	2026-10-02T15:12:33.1149919Z hint: Disable this message with "git config set advice.defaultBranchName false"
+scan	Checkout source code	2026-10-02T15:12:33.1151926Z Initialized empty Git repository in /home/runner/work/celix/celix/.git/
+scan	Checkout source code	2026-10-02T15:12:33.1155610Z [command]/usr/bin/git remote add origin https://github.com/Adarsh-Me/celix
+scan	Checkout source code	2026-10-02T15:12:33.1176965Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:33.1178284Z ##[group]Disabling automatic garbage collection
+scan	Checkout source code	2026-10-02T15:12:33.1180550Z [command]/usr/bin/git config --local gc.auto 0
+scan	Checkout source code	2026-10-02T15:12:33.1218835Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:33.1220702Z ##[group]Setting up auth
+scan	Checkout source code	2026-10-02T15:12:33.1221833Z Removing SSH command configuration
+scan	Checkout source code	2026-10-02T15:12:33.1223703Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scan	Checkout source code	2026-10-02T15:12:33.1266937Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scan	Checkout source code	2026-10-02T15:12:33.1742555Z Removing HTTP extra header
+scan	Checkout source code	2026-10-02T15:12:33.1749362Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scan	Checkout source code	2026-10-02T15:12:33.1798540Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scan	Checkout source code	2026-10-02T15:12:33.2086585Z Removing includeIf entries pointing to credentials config files
+scan	Checkout source code	2026-10-02T15:12:33.2092876Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scan	Checkout source code	2026-10-02T15:12:33.2138712Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scan	Checkout source code	2026-10-02T15:12:33.2452440Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+scan	Checkout source code	2026-10-02T15:12:33.2511897Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/celix/celix/.git.path /home/runner/work/_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config
+scan	Checkout source code	2026-10-02T15:12:33.2554184Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/celix/celix/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config
+scan	Checkout source code	2026-10-02T15:12:33.2598721Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config
+scan	Checkout source code	2026-10-02T15:12:33.2640385Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config
+scan	Checkout source code	2026-10-02T15:12:33.2677551Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:33.2678327Z ##[group]Fetching the repository
+scan	Checkout source code	2026-10-02T15:12:33.2685312Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a040fda19322050cfc58b7134e749334feda415a:refs/remotes/origin/ci-vulnerability-scan
+scan	Checkout source code	2026-10-02T15:12:34.1961478Z From https://github.com/Adarsh-Me/celix
+scan	Checkout source code	2026-10-02T15:12:34.1963809Z  * [new ref]         a040fda19322050cfc58b7134e749334feda415a -> origin/ci-vulnerability-scan
+scan	Checkout source code	2026-10-02T15:12:34.1973117Z [command]/usr/bin/git branch --list --remote origin/ci-vulnerability-scan
+scan	Checkout source code	2026-10-02T15:12:34.2011285Z   origin/ci-vulnerability-scan
+scan	Checkout source code	2026-10-02T15:12:34.2024519Z [command]/usr/bin/git rev-parse refs/remotes/origin/ci-vulnerability-scan
+scan	Checkout source code	2026-10-02T15:12:34.2061511Z a040fda19322050cfc58b7134e749334feda415a
+scan	Checkout source code	2026-10-02T15:12:34.2075970Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:34.2076852Z ##[group]Determining the checkout info
+scan	Checkout source code	2026-10-02T15:12:34.2077762Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:34.2078309Z [command]/usr/bin/git sparse-checkout disable
+scan	Checkout source code	2026-10-02T15:12:34.2141144Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+scan	Checkout source code	2026-10-02T15:12:34.2186098Z ##[group]Checking out the ref
+scan	Checkout source code	2026-10-02T15:12:34.2189516Z [command]/usr/bin/git checkout --progress --force -B ci-vulnerability-scan refs/remotes/origin/ci-vulnerability-scan
+scan	Checkout source code	2026-10-02T15:12:34.3275764Z Switched to a new branch 'ci-vulnerability-scan'
+scan	Checkout source code	2026-10-02T15:12:34.3278758Z branch 'ci-vulnerability-scan' set up to track 'origin/ci-vulnerability-scan'.
+scan	Checkout source code	2026-10-02T15:12:34.3291039Z ##[endgroup]
+scan	Checkout source code	2026-10-02T15:12:34.3344803Z [command]/usr/bin/git log -1 --format=%H
+scan	Checkout source code	2026-10-02T15:12:34.3381445Z a040fda19322050cfc58b7134e749334feda415a
+scan	Install Trivy	﻿2026-10-02T15:12:34.3634836Z ##[group]Run set -euo pipefail
+scan	Install Trivy	2026-10-02T15:12:34.3636013Z ^[[36;1mset -euo pipefail^[[0m
+scan	Install Trivy	2026-10-02T15:12:34.3638256Z ^[[36;1murl="https://github.com/aquasecurity/trivy/releases/download/v${TRIVY_VERSION}/trivy_${TRIVY_VERSION}_Linux-64bit.tar.gz"^[[0m
+scan	Install Trivy	2026-10-02T15:12:34.3640755Z ^[[36;1mcurl -sSfL --retry 3 -o /tmp/trivy.tar.gz "$url"^[[0m
+scan	Install Trivy	2026-10-02T15:12:34.3642434Z ^[[36;1mecho "${TRIVY_SHA256}  /tmp/trivy.tar.gz" | sha256sum --check --status^[[0m
+scan	Install Trivy	2026-10-02T15:12:34.3644351Z ^[[36;1mtar xzf /tmp/trivy.tar.gz -C /tmp trivy^[[0m
+scan	Install Trivy	2026-10-02T15:12:34.3645813Z ^[[36;1msudo install -m 0755 /tmp/trivy /usr/local/bin/trivy^[[0m
+scan	Install Trivy	2026-10-02T15:12:34.3647097Z ^[[36;1mtrivy --version^[[0m
+scan	Install Trivy	2026-10-02T15:12:34.4016393Z shell: /usr/bin/bash -e {0}
+scan	Install Trivy	2026-10-02T15:12:34.4017455Z env:
+scan	Install Trivy	2026-10-02T15:12:34.4018181Z   TRIVY_VERSION: 0.75.0
+scan	Install Trivy	2026-10-02T15:12:34.4019639Z   TRIVY_SHA256: c6e65abddb348e25f10549df887045629cf28cc72453cd1c63acb717316b3f3f
+scan	Install Trivy	2026-10-02T15:12:34.4021287Z ##[endgroup]
+scan	Install Trivy	2026-10-02T15:12:36.4033028Z Version: 0.75.0
+scan	Scan dependency declarations (report-only)	﻿2026-10-02T15:12:36.4124355Z ##[group]Run set -uo pipefail
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4124838Z ^[[36;1mset -uo pipefail^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4125135Z ^[[36;1mtrivy fs \^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4125406Z ^[[36;1m  --scanners vuln \^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4125706Z ^[[36;1m  --format json \^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4126012Z ^[[36;1m  --output trivy-scan.json \^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4126333Z ^[[36;1m  --exit-code 0 \^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4126676Z ^[[36;1m  --severity UNKNOWN,LOW,MEDIUM,HIGH,CRITICAL \^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4127186Z ^[[36;1m  --skip-dirs bundles,examples,cmake,misc,test_package,doctest \^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4127642Z ^[[36;1m  .^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4127900Z ^[[36;1mecho "scan_exit=$?"^[[0m
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4205329Z shell: /usr/bin/bash -e {0}
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4205722Z env:
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4205983Z   TRIVY_VERSION: 0.75.0
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4206456Z   TRIVY_SHA256: c6e65abddb348e25f10549df887045629cf28cc72453cd1c63acb717316b3f3f
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.4206931Z ##[endgroup]
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.5267072Z 2026-10-02T15:12:36Z	INFO	[vulndb] Need to update DB
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.5268006Z 2026-10-02T15:12:36Z	INFO	[vulndb] Downloading vulnerability DB...
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:36.5268682Z 2026-10-02T15:12:36Z	INFO	[vulndb] Downloading artifact...	repo="mirror.gcr.io/aquasec/trivy-db:2"
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:41.4639026Z 19.23 MiB / 120.54 MiB [--------->__________________________________________________] 15.95% ? p/s ?57.78 MiB / 120.54 MiB [---------------------------->_______________________________] 47.93% ? p/s ?101.43 MiB / 120.54 MiB [------------------------------------------------->_________] 84.15% ? p/s ?120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 168.65 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 168.65 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 168.65 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 157.77 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 157.77 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 157.77 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 147.59 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 147.59 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 147.59 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 138.07 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 138.07 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 138.07 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 129.16 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 129.16 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 129.16 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 120.83 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 120.83 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 120.83 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [------------------------------------------->] 100.00% 113.03 MiB p/s ETA 0s120.54 MiB / 120.54 MiB [-----------------------------------------------] 100.00% 28.49 MiB p/s 4.4s2026-10-02T15:12:41Z	INFO	[vulndb] Artifact successfully downloaded	repo="mirror.gcr.io/aquasec/trivy-db:2"
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:41.5486345Z 2026-10-02T15:12:41Z	INFO	[vuln] Vulnerability scanning is enabled
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:41.6845747Z 2026-10-02T15:12:41Z	INFO	Number of language-specific files	num=0
+scan	Scan dependency declarations (report-only)	2026-10-02T15:12:41.6911142Z scan_exit=0
+scan	Summarise counts by severity	﻿2026-10-02T15:12:41.7368368Z ##[group]Run set -uo pipefail
+scan	Summarise counts by severity	2026-10-02T15:12:41.7368908Z ^[[36;1mset -uo pipefail^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7369328Z ^[[36;1mif [ ! -s trivy-scan.json ]; then^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7370036Z ^[[36;1m  echo "No scan report produced (see the scan step log)." >> "$GITHUB_STEP_SUMMARY"^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7370731Z ^[[36;1m  exit 0^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7371071Z ^[[36;1mfi^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7371401Z ^[[36;1m{^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7371821Z ^[[36;1m  echo "## Dependency vulnerability scan (report-only)"^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7372359Z ^[[36;1m  echo^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7372698Z ^[[36;1m  echo "| Severity | Findings |"^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7373169Z ^[[36;1m  echo "|---|---|"^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7373635Z ^[[36;1m  for sev in CRITICAL HIGH MEDIUM LOW UNKNOWN; do^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7374734Z ^[[36;1m    n="$(jq --arg s "$sev" '[(.Results[]?.Vulnerabilities[]? | select(.Severity==$s))]|length' trivy-scan.json)"^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7375573Z ^[[36;1m    echo "| ${sev} | ${n} |"^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7376028Z ^[[36;1m  done^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7376334Z ^[[36;1m  echo^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7376885Z ^[[36;1m  echo "Machine-readable report: \`trivy-scan.json\` (workflow artifact)."^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7377546Z ^[[36;1m  echo^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7378239Z ^[[36;1m  echo "Suspected vulnerabilities in Apache Celix itself must NOT be filed here - see SECURITY.md."^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7379076Z ^[[36;1m} >> "$GITHUB_STEP_SUMMARY"^[[0m
+scan	Summarise counts by severity	2026-10-02T15:12:41.7457778Z shell: /usr/bin/bash -e {0}
+scan	Summarise counts by severity	2026-10-02T15:12:41.7458047Z env:
+scan	Summarise counts by severity	2026-10-02T15:12:41.7458237Z   TRIVY_VERSION: 0.75.0
+scan	Summarise counts by severity	2026-10-02T15:12:41.7458618Z   TRIVY_SHA256: c6e65abddb348e25f10549df887045629cf28cc72453cd1c63acb717316b3f3f
+scan	Summarise counts by severity	2026-10-02T15:12:41.7459217Z ##[endgroup]
+scan	Upload machine-readable report	﻿2026-10-02T15:12:42.3822101Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+scan	Upload machine-readable report	2026-10-02T15:12:42.3822791Z with:
+scan	Upload machine-readable report	2026-10-02T15:12:42.3823110Z   name: vulnerability-scan-report
+scan	Upload machine-readable report	2026-10-02T15:12:42.3823528Z   path: trivy-scan.json
+scan	Upload machine-readable report	2026-10-02T15:12:42.3823891Z   if-no-files-found: warn
+scan	Upload machine-readable report	2026-10-02T15:12:42.3824489Z   retention-days: 30
+scan	Upload machine-readable report	2026-10-02T15:12:42.3824827Z   compression-level: 6
+scan	Upload machine-readable report	2026-10-02T15:12:42.3825163Z   overwrite: false
+scan	Upload machine-readable report	2026-10-02T15:12:42.3825497Z   include-hidden-files: false
+scan	Upload machine-readable report	2026-10-02T15:12:42.3825868Z   archive: true
+scan	Upload machine-readable report	2026-10-02T15:12:42.3826163Z env:
+scan	Upload machine-readable report	2026-10-02T15:12:42.3826605Z   TRIVY_VERSION: 0.75.0
+scan	Upload machine-readable report	2026-10-02T15:12:42.3827195Z   TRIVY_SHA256: c6e65abddb348e25f10549df887045629cf28cc72453cd1c63acb717316b3f3f
+scan	Upload machine-readable report	2026-10-02T15:12:42.3827853Z ##[endgroup]
+scan	Upload machine-readable report	2026-10-02T15:12:42.5478949Z With the provided path, there will be 1 file uploaded
+scan	Upload machine-readable report	2026-10-02T15:12:42.5491667Z Artifact name is valid!
+scan	Upload machine-readable report	2026-10-02T15:12:42.5515149Z Root directory input is valid!
+scan	Upload machine-readable report	2026-10-02T15:12:42.8226404Z Uploading artifact: vulnerability-scan-report.zip
+scan	Upload machine-readable report	2026-10-02T15:12:42.8271077Z Beginning upload of artifact content to blob storage
+scan	Upload machine-readable report	2026-10-02T15:12:42.9876881Z Uploaded bytes 561
+scan	Upload machine-readable report	2026-10-02T15:12:43.0276182Z Finished uploading artifact content to blob storage!
+scan	Upload machine-readable report	2026-10-02T15:12:43.0277465Z SHA256 digest of uploaded artifact is 8d3567551d365f58c5c3b88d3defd2d93965255b23268074da9823c4515c51a5
+scan	Upload machine-readable report	2026-10-02T15:12:43.0278559Z Finalizing artifact upload
+scan	Upload machine-readable report	2026-10-02T15:12:43.3675344Z Artifact vulnerability-scan-report successfully finalized. Artifact ID 11234677811
+scan	Upload machine-readable report	2026-10-02T15:12:43.3676755Z Artifact vulnerability-scan-report has been successfully uploaded! Final size is 561 bytes. Artifact ID is 11234677811
+scan	Upload machine-readable report	2026-10-02T15:12:43.3678169Z Artifact download URL: https://github.com/Adarsh-Me/celix/actions/runs/37024912308/artifacts/11234677811
+scan	Post Checkout source code	﻿2026-10-02T15:12:43.4899298Z Post job cleanup.
+scan	Post Checkout source code	2026-10-02T15:12:43.5806766Z [command]/usr/bin/git version
+scan	Post Checkout source code	2026-10-02T15:12:43.5875390Z git version 2.55.0
+scan	Post Checkout source code	2026-10-02T15:12:43.5932225Z Temporarily overriding HOME='/home/runner/work/_temp/769d23e0-5c30-4b16-b4e9-c71a3aa10d95' before making global git config changes
+scan	Post Checkout source code	2026-10-02T15:12:43.5933617Z Adding repository directory to the temporary git global config as a safe directory
+scan	Post Checkout source code	2026-10-02T15:12:43.5938607Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/celix/celix
+scan	Post Checkout source code	2026-10-02T15:12:43.7403139Z Removing SSH command configuration
+scan	Post Checkout source code	2026-10-02T15:12:43.7404374Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+scan	Post Checkout source code	2026-10-02T15:12:43.7442062Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+scan	Post Checkout source code	2026-10-02T15:12:43.8824574Z Removing HTTP extra header
+scan	Post Checkout source code	2026-10-02T15:12:43.8837564Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+scan	Post Checkout source code	2026-10-02T15:12:43.8880908Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+scan	Post Checkout source code	2026-10-02T15:12:43.9182123Z Removing includeIf entries pointing to credentials config files
+scan	Post Checkout source code	2026-10-02T15:12:43.9191513Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+scan	Post Checkout source code	2026-10-02T15:12:43.9224792Z includeif.gitdir:/home/runner/work/celix/celix/.git.path
+scan	Post Checkout source code	2026-10-02T15:12:43.9225666Z includeif.gitdir:/home/runner/work/celix/celix/.git/worktrees/*.path
+scan	Post Checkout source code	2026-10-02T15:12:43.9226718Z includeif.gitdir:/github/workspace/.git.path
+scan	Post Checkout source code	2026-10-02T15:12:43.9227696Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+scan	Post Checkout source code	2026-10-02T15:12:43.9233484Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/celix/celix/.git.path
+scan	Post Checkout source code	2026-10-02T15:12:43.9266972Z /home/runner/work/_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config
+scan	Post Checkout source code	2026-10-02T15:12:43.9278550Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/celix/celix/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-5916f36b\-7321\-4dd9\-a2cd\-4678a8b71b75\.config
+scan	Post Checkout source code	2026-10-02T15:12:44.0926084Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/celix/celix/.git/worktrees/*.path
+scan	Post Checkout source code	2026-10-02T15:12:44.0953840Z /home/runner/work/_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config
+scan	Post Checkout source code	2026-10-02T15:12:44.0964246Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/celix/celix/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-5916f36b\-7321\-4dd9\-a2cd\-4678a8b71b75\.config
+scan	Post Checkout source code	2026-10-02T15:12:44.1375433Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+scan	Post Checkout source code	2026-10-02T15:12:44.1410193Z /github/runner_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config
+scan	Post Checkout source code	2026-10-02T15:12:44.1418153Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-5916f36b\-7321\-4dd9\-a2cd\-4678a8b71b75\.config
+scan	Post Checkout source code	2026-10-02T15:12:44.1459922Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+scan	Post Checkout source code	2026-10-02T15:12:44.1490885Z /github/runner_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config
+scan	Post Checkout source code	2026-10-02T15:12:44.1500919Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-5916f36b\-7321\-4dd9\-a2cd\-4678a8b71b75\.config
+scan	Post Checkout source code	2026-10-02T15:12:44.1545467Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+scan	Post Checkout source code	2026-10-02T15:12:44.1814454Z Removing credentials config '/home/runner/work/_temp/git-credentials-5916f36b-7321-4dd9-a2cd-4678a8b71b75.config'
+scan	Complete job	﻿2026-10-02T15:12:44.1966149Z Cleaning up orphan processes
